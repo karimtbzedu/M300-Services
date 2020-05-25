@@ -12,3 +12,13 @@
   - [Systemsicherheit](#systemsicherheit)
 - [Vagrant](#vagrant)
   - [](#)
+
+
+## Persönlicher Wissenstand
+Im folgenden dokumentiere ich meinen Wissenstand zu den folgenden Themen:
+1. Linux
+2. Virtualisierung
+3. Vagrant
+4. Versionsverwaltung / Git
+5. Mark Down
+6. Systemsicherheit
