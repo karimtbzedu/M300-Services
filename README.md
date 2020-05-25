@@ -16,13 +16,13 @@
         - [Mark Down](#mark-down)
         - [Systemsicherheit](#systemsicherheit)
   - [Persönlicher Wissenstand](#persönlicher-wissenstand-1)
-    - [Linux (#linux)](#linux-linux)
-    - [Virtualisierung ()](#virtualisierung-)
+    - [Linux](#linux-1)
+    - [Virtualisierung](#virtualisierung-1)
     - [Vagrant](#vagrant-1)
     - [Versionsverwaltung / Git](#versionsverwaltung--git-1)
     - [Mark Down](#mark-down-1)
     - [Systemsicherheit](#systemsicherheit-1)
-  
+
 ### K1
 Auf meinem Notebook habe ich die folgenden Programme eingerichtet:
 1. VirtualBox (inkl. Ubuntu VM)
@@ -49,9 +49,9 @@ Auf meinem Notebook habe ich die folgenden Programme eingerichtet:
 ## Persönlicher Wissenstand
 Im folgenden dokumentiere ich meinen Wissenstand zu den geforderten Themen.
 
-### Linux (#linux)
+### Linux
 
-### Virtualisierung ()
+### Virtualisierung
 
 ### Vagrant
 
