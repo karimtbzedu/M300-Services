@@ -3,27 +3,41 @@
 
 # Table of contents
 
+# Table of contents
+
 - [Dokumentation M300 LB02](#dokumentation-m300-lb02)
   - [Von Karim Darwiche](#von-karim-darwiche)
 - [Table of contents](#table-of-contents)
-    - [K1](#k1)
-    - [K2](#k2)
-      - [Persönlicher Wissenstand](#persönlicher-wissenstand)
-        - [Linux](#linux)
-        - [Virtualisierung](#virtualisierung)
-        - [Vagrant](#vagrant)
-        - [Versionsverwaltung / Git](#versionsverwaltung--git)
-        - [Mark Down](#mark-down)
-        - [Systemsicherheit](#systemsicherheit)
-  - [Persönlicher Wissenstand](#persönlicher-wissenstand-1)
-    - [Linux](#linux-1)
-    - [Virtualisierung](#virtualisierung-1)
-    - [Vagrant](#vagrant-1)
-    - [Versionsverwaltung / Git](#versionsverwaltung--git-1)
-    - [Mark Down](#mark-down-1)
-    - [Systemsicherheit](#systemsicherheit-1)
+- [Table of contents](#table-of-contents-1)
+  - [K1](#k1)
+  - [K2](#k2)
+    - [Persönlicher Wissenstand](#persönlicher-wissenstand)
+    - [Linux](#linux)
+    - [Virtualisierung](#virtualisierung)
+    - [Vagrant](#vagrant)
+    - [Versionsverwaltung / Git](#versionsverwaltung--git)
+    - [Mark Down](#mark-down)
+    - [Systemsicherheit](#systemsicherheit)
+  - [K3](#k3)
+    - [Eingerichtete Umgebung](#eingerichtete-umgebung)
+    - [Vagrant-Befehle](#vagrant-befehle)
+    - [Umgebungs Variablen](#umgebungs-variablen)
+    - [Netzwerkplan](#netzwerkplan)
+    - [Sicherheitsaspekte](#sicherheitsaspekte)
+    - [Testfälle](#testfälle)
+  - [K4](#k4)
+    - [Sicherheitsaspekte implementieren](#sicherheitsaspekte-implementieren)
+      - [Firewall inkl. Rules](#firewall-inkl-rules)
+      - [Reverse-Proxy](#reverse-proxy)
+      - [Benutzer- und Rechtevergabe](#benutzer--und-rechtevergabe)
+      - [Zugang SSH-Tunnel](#zugang-ssh-tunnel)
+      - [Sicherheitsmassnahmen](#sicherheitsmassnahmen)
+- [K5](#k5)
+    - [Persönliche Lernentwicklung](#persönliche-lernentwicklung)
+      - [Vorwissen - Wissenszuwachs](#vorwissen---wissenszuwachs)
+      - [Reflexion](#reflexion)
 
-### K1
+## K1
 Auf meinem Notebook habe ich die folgenden Programme eingerichtet:
 1. VirtualBox (inkl. Ubuntu VM)
 2. Vagrant
@@ -31,24 +45,8 @@ Auf meinem Notebook habe ich die folgenden Programme eingerichtet:
 4. Git-Client
 5. SSH-Key für Client erstellt
 
-### K2
-#### Persönlicher Wissenstand
-##### Linux
-
-##### Virtualisierung
-
-##### Vagrant
-
-##### Versionsverwaltung / Git
-
-##### Mark Down
-
-##### Systemsicherheit
-
-
-## Persönlicher Wissenstand
-Im folgenden dokumentiere ich meinen Wissenstand zu den geforderten Themen.
-
+## K2
+### Persönlicher Wissenstand
 ### Linux
 
 ### Virtualisierung
@@ -60,3 +58,25 @@ Im folgenden dokumentiere ich meinen Wissenstand zu den geforderten Themen.
 ### Mark Down
 
 ### Systemsicherheit
+
+## K3
+### Eingerichtete Umgebung
+### Vagrant-Befehle
+### Umgebungs Variablen
+### Netzwerkplan
+### Sicherheitsaspekte
+### Testfälle
+
+## K4
+### Sicherheitsaspekte implementieren
+#### Firewall inkl. Rules
+#### Reverse-Proxy
+#### Benutzer- und Rechtevergabe
+#### Zugang SSH-Tunnel
+#### Sicherheitsmassnahmen
+
+
+# K5
+### Persönliche Lernentwicklung
+#### Vorwissen - Wissenszuwachs
+#### Reflexion
