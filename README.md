@@ -1,8 +1,7 @@
 # Dokumentation M300 LB02
 ## Von Karim Darwiche
 
-# Table of contents
-
+### Inhaltsverzeichnis
 
 - [Persönlicher Wissenstand](#persnlicher-wissenstand)
   - [Linux](#linux)
