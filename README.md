@@ -1,11 +1,11 @@
 # Dokumentation M300 LB02
 ## Von Karim Darwiche
 
-## Inhaltsverzeichnis
+# Table of contents
 
 - [Dokumentation M300 LB02](#dokumentation-m300-lb02)
   - [Von Karim Darwiche](#von-karim-darwiche)
-  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+- [Table of contents](#table-of-contents)
     - [K1](#k1)
     - [K2](#k2)
       - [Persönlicher Wissenstand](#persönlicher-wissenstand)
