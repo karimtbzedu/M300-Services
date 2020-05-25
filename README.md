@@ -1,14 +1,8 @@
 # Dokumentation M300 LB02
 ## Von Karim Darwiche
 
-# Table of contents
+## Inhaltsverzeichnis
 
-# Table of contents
-
-- [Dokumentation M300 LB02](#dokumentation-m300-lb02)
-  - [Von Karim Darwiche](#von-karim-darwiche)
-- [Table of contents](#table-of-contents)
-- [Table of contents](#table-of-contents-1)
   - [K1](#k1)
   - [K2](#k2)
     - [Persönlicher Wissenstand](#persönlicher-wissenstand)
@@ -32,7 +26,7 @@
       - [Benutzer- und Rechtevergabe](#benutzer--und-rechtevergabe)
       - [Zugang SSH-Tunnel](#zugang-ssh-tunnel)
       - [Sicherheitsmassnahmen](#sicherheitsmassnahmen)
-- [K5](#k5)
+  - [K5](#k5)
     - [Persönliche Lernentwicklung](#persönliche-lernentwicklung)
       - [Vorwissen - Wissenszuwachs](#vorwissen---wissenszuwachs)
       - [Reflexion](#reflexion)
@@ -76,7 +70,7 @@ Auf meinem Notebook habe ich die folgenden Programme eingerichtet:
 #### Sicherheitsmassnahmen
 
 
-# K5
+## K5
 ### Persönliche Lernentwicklung
 #### Vorwissen - Wissenszuwachs
 #### Reflexion
