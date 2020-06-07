@@ -69,8 +69,27 @@ Anstatt vor jedem Titel ein <\h1><\h1> schreiben zu müssen, kann man in Markdow
 
 ## K3
 ### Eingerichtete Umgebung
+Als Grundinstallation habe ich mich erstmals für einen Apache2 Webserver mit Webalizer entschieden. 
+
+#### Apache 2 Webserver
+Apache ist der <b>meistgenutzte</b> Webserver im Internet. Er ist flexibel konfigurierbar und über eine Vielzahl von Modulen erweiterbar.<sup>1</sup>
+  
+Das quellfreie Open Source-Produkt wird unter Federführung der Apache Software Foundation fortlaufend weiterentwickelt.<sup>2</sup> Ausserdem ist er leicht zu installieren, was ihn unter anderem so beliebt macht.
+  
+<sup>1</sup>[Quelle wiki.ubuntuusers.de](https://wiki.ubuntuusers.de/Apache_2.4/)
+<sup>2</sup>[Quelle checkdomain.de](https://www.checkdomain.de/hosting/lexikon/apache/)
+
+#### Webalizer
+Das Programm Webalizer dient zur Auswertung der Logdateien, die Webserver auf Basis von Besucheranfragen erstellen. Die Software erzeugt Berichte im HTML-Format, die anschliessend mit einem beliebigen Webbrowser betrachtet werden können. [Quelle](https://wiki.ubuntuusers.de/Webalizer/
+
+
+Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserver durchführen.
+
 ### Vagrant-Befehle
-### Umgebungs Variablen
+
+
+
+### Umgebungs-Variablen
 ### Netzwerkplan
 ### Sicherheitsaspekte
 ### Testfälle
