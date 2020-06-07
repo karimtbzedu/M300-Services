@@ -76,14 +76,15 @@ Apache ist der <b>meistgenutzte</b> Webserver im Internet. Er ist flexibel konfi
   
 Das quellfreie Open Source-Produkt wird unter Federführung der Apache Software Foundation fortlaufend weiterentwickelt.<sup>2</sup> Ausserdem ist er leicht zu installieren, was ihn unter anderem so beliebt macht.
   
-<sup>1</sup>Quelle[wiki.ubuntuusers.de](https://wiki.ubuntuusers.de/Apache_2.4/)  
-<sup>2</sup>Quelle[checkdomain.de](https://www.checkdomain.de/hosting/lexikon/apache/)
+<sup>1</sup>Quelle [wiki.ubuntuusers.de](https://wiki.ubuntuusers.de/Apache_2.4/)  
+<sup>2</sup>Quelle [checkdomain.de](https://www.checkdomain.de/hosting/lexikon/apache/)
 
 #### Webalizer
-Das Programm Webalizer dient zur Auswertung der Logdateien, die Webserver auf Basis von Besucheranfragen erstellen. Die Software erzeugt Berichte im HTML-Format, die anschliessend mit einem beliebigen Webbrowser betrachtet werden können. [Quelle](https://wiki.ubuntuusers.de/Webalizer/
-
+Das Programm Webalizer dient zur Auswertung der Logdateien, die Webserver auf Basis von Besucheranfragen erstellen. Die Software erzeugt Berichte im HTML-Format, die anschliessend mit einem beliebigen Webbrowser betrachtet werden können.<sup>1</sup>
 
 Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserver durchführen.
+  
+<sup>1</sup>Quelle [wiki.ubuntuusers.de](https://wiki.ubuntuusers.de/Webalizer/)
 
 ### Vagrant-Befehle
 
