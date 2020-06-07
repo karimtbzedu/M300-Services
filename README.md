@@ -60,7 +60,7 @@ Markdown ist ein einfacher Text zu HTML übersetzer, der für Web Autoren erstel
 Anstatt, dass man alles mühsam in HTML schreiben muss, wurde ein ganz leichter Code entwickelt, welcher es dem Benutzer erlaubt, gleich wie in HTML zu schreiben.  
   
 <b>Beispiel</b>  
-Anstatt vor jedem Titel ein <``h1><\h1> schreiben zu müssen, kann man in Markdown einfach Hashtags setzen.  
+Anstatt vor jedem Titel ein <'h1><\h1> schreiben zu müssen, kann man in Markdown einfach Hashtags setzen.  
 \# H1 Titel  
 \## H2 Titel  
 \###### H6 Titel  
@@ -80,6 +80,18 @@ Das quellfreie Open Source-Produkt wird unter Federführung der Apache Software 
 <sup>1</sup>Quelle [wiki.ubuntuusers.de](https://wiki.ubuntuusers.de/Apache_2.4/)  
 <sup>2</sup>Quelle [checkdomain.de](https://www.checkdomain.de/hosting/lexikon/apache/)
 
+#### Installation Apache 2
+
+Die Installation stellt sich als äusserst einfach dar.
+
+1. Paketquellen von Ubuntu aktualisieren
+`sudo apt-get update`
+
+2. Nun wird Apache installiert. Das Argument -y bewirkt, dass keine manuelle Eingabe benötigt wird.
+`sudo apt-get install -y apache2`
+
+Testen kann man das ganze mit `curl http://localhost`
+
 #### Webalizer
 Das Programm Webalizer dient zur Auswertung der Logdateien, die Webserver auf Basis von Besucheranfragen erstellen. Die Software erzeugt Berichte im HTML-Format, die anschliessend mit einem beliebigen Webbrowser betrachtet werden können.<sup>1</sup>
 
@@ -87,7 +99,22 @@ Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserv
   
 <sup>1</sup>Quelle [wiki.ubuntuusers.de](https://wiki.ubuntuusers.de/Webalizer/)
 
+#### Installation Webalizer
+1. Paketquellen von Ubuntu aktualisieren
+`sudo apt-get update`
+
+2. Nun wird Webalizer installiert. Das Argument -y bewirkt, dass keine manuelle Eingabe benötigt wird.
+`sudo apt-get install -y webalizer`
+
 ### Vagrant-Befehle
+
+`vagrant init` Vagrantfile anlegen
+`vagrant up` Vagrant-VM starten
+`vagrant ssh` Eine SSH-Verbindung zur VM aufbauen
+`vagrant status` Zeigt den aktuellen Status der VM an
+`vagrant port` Zeigt die Weitergeleiteten Ports der VM an
+`vagrant halt` Stoppt die VM
+`vagrant destroy` Löscht die VM
 
 #### Vagrant VM erstellen
 
@@ -100,7 +127,7 @@ Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserv
 3. In diesem Ordner eine neue Vagrant VM inkl. Vagrantfile erstellen. In unserem Fall Ubuntu.
 `vagrant init ubuntu/xenial64`
 
-4. 
+Die VM wird nun erstellt.
 
 ### Umgebungs-Variablen
 ### Netzwerkplan
