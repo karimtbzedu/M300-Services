@@ -82,7 +82,7 @@ Das quellfreie Open Source-Produkt wird unter Federführung der Apache Software 
 
 #### Installation Apache 2
 
-Die Installation stellt sich als äusserst einfach dar.
+Die Installation stellt sich als äusserst einfach raus.
 
 1. Paketquellen von Ubuntu aktualisieren
 `sudo apt-get update`
@@ -108,13 +108,13 @@ Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserv
 
 ### Vagrant-Befehle
 
-`vagrant init` Vagrantfile anlegen
-`vagrant up` Vagrant-VM starten
-`vagrant ssh` Eine SSH-Verbindung zur VM aufbauen
-`vagrant status` Zeigt den aktuellen Status der VM an
-`vagrant port` Zeigt die Weitergeleiteten Ports der VM an
-`vagrant halt` Stoppt die VM
-`vagrant destroy` Löscht die VM
+`vagrant init` Vagrantfile anlegen  
+`vagrant up` Vagrant-VM starten  
+`vagrant ssh` Eine SSH-Verbindung zur VM aufbauen  
+`vagrant status` Zeigt den aktuellen Status der VM an  
+`vagrant port` Zeigt die Weitergeleiteten Ports der VM an  
+`vagrant halt` Stoppt die VM  
+`vagrant destroy` Löscht die VM  
 
 #### Vagrant VM erstellen
 
