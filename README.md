@@ -57,8 +57,9 @@ Die Versionsverwaltung im Git ermöglicht es einem Benutzer, ältere Dateien abz
 ### Markdown
 Markdown ist ein einfacher Text zu HTML übersetzer, der für Web Autoren erstellt wurde. Es erlaubt einem, auch Offline Texte zu schreiben und diese dann sobald man eine Internetverbindung hat leicht zu publizieren. 
 
-Anstatt, dass man alles mühsam in HTML schreiben muss, wurde ein ganz leichter Code entwickelt, welcher es dem Benutzer erlaubt, gleich wie in HTML zu schreiben.
-
+Anstatt, dass man alles mühsam in HTML schreiben muss, wurde ein ganz leichter Code entwickelt, welcher es dem Benutzer erlaubt, gleich wie in HTML zu schreiben.  
+  
+<b>Beispiel<b>  
 Anstatt vor jedem Titel ein <\h1><\h1> schreiben zu müssen, kann man in Markdown einfach Hashtags setzen.  
 \# H1 Titel  
 \## H2 Titel  
@@ -66,10 +67,10 @@ Anstatt vor jedem Titel ein <\h1><\h1> schreiben zu müssen, kann man in Markdow
 
 ### Systemsicherheit
 
-
 ## K3
 ### Eingerichtete Umgebung
-Als Grundinstallation habe ich mich erstmals für einen Apache2 Webserver mit Webalizer entschieden. 
+Als Grundinstallation habe ich mich vorerst für einen Apache2 Webserver mit Webalizer entschieden. 
+Diese Umgebung wird dann in K4 aussreichend gehardet.
 
 #### Apache 2 Webserver
 Apache ist der <b>meistgenutzte</b> Webserver im Internet. Er ist flexibel konfigurierbar und über eine Vielzahl von Modulen erweiterbar.<sup>1</sup>
@@ -88,7 +89,18 @@ Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserv
 
 ### Vagrant-Befehle
 
+#### Vagrant VM erstellen
 
+1. Zuerst einen neuen Ordner erstellen, in der die VM dann abgelegt wird.
+`mkdir MeineVagrantVM`
+
+2. Dann mit `cd` in den neu erstellten Ordner wechseln.
+`cd MeineVagrantVM`
+
+3. In diesem Ordner eine neue Vagrant VM inkl. Vagrantfile erstellen. In unserem Fall Ubuntu.
+`vagrant init ubuntu/xenial64`
+
+4. 
 
 ### Umgebungs-Variablen
 ### Netzwerkplan
