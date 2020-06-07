@@ -60,7 +60,7 @@ Markdown ist ein einfacher Text zu HTML übersetzer, der für Web Autoren erstel
 Anstatt, dass man alles mühsam in HTML schreiben muss, wurde ein ganz leichter Code entwickelt, welcher es dem Benutzer erlaubt, gleich wie in HTML zu schreiben.  
   
 <b>Beispiel</b>  
-Anstatt vor jedem Titel ein <\h1><\h1> schreiben zu müssen, kann man in Markdown einfach Hashtags setzen.  
+Anstatt vor jedem Titel ein    <h1><\h1> schreiben zu müssen, kann man in Markdown einfach Hashtags setzen.  
 \# H1 Titel  
 \## H2 Titel  
 \###### H6 Titel  
