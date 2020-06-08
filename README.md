@@ -141,18 +141,28 @@ Die VM wird nun erstellt.
 ### Sicherheitsaspekte implementieren
 #### Firewall inkl. Rules
 
-Ich habe nun die Firewall installiert. Vor dem aktivieren habe ich aber die Rules erstellt.
+1. Ich habe zuerst die Firewall installiert: `sudo apt-get install ufw`  
 
-Die folgenden Rules habe ich erstellt:
-| IP       | Port | Beschreibung     | Direction | Ziel |
-|----------|------|------------------|-----------|------|
-| 10.0.0.2 | 22   | SSH Zugang       | ->        | any  |
-| 10.0.0.2 | 3306 | MySQL Zugang Web | ->        | any  |
-|          |      |                  |           |      |
-|          |      |                  |           |      |
+Vor dem aktivieren habe ich aber die Rules erstellt.
 
+2. Rules habe ich so erstellt:  
+`sudo ufw allow from [Source IP] to [Destination IP oder any] port [Port-Nummer]`
+
+Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt habe ich SSH und MySQL aktiviert.
+| IP       | Port | Protokoll | Beschreibung     | Direction | Ziel |
+|----------|------|-----------|------------------|-----------|------|
+| 10.0.0.2 | 22   | TCP/UDP   | SSH Zugang       | <->       | any  |
+| 10.0.0.2 | 3306 | TCP/UDP   | MySQL Zugang Web | ->        | any  |
+| 10.0.0.2 | 80   | TCP       | HTTP             | ->        | any  |
+|          |      |           |                  |           |      |
+|          |      |           |                  |           |      |
+
+3. Die Firewall musste ich nach dem erstellen noch aktivieren:  
+`sudo ufw enable`
 
 #### Reverse-Proxy
+
+
 #### Benutzer- und Rechtevergabe
 #### Zugang SSH-Tunnel
 #### Sicherheitsmassnahmen
