@@ -130,6 +130,9 @@ Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserv
 Die VM wird nun erstellt.
 
 ### Umgebungs-Variablen
+
+
+
 ### Netzwerkplan
 ### Sicherheitsaspekte
 ### Testfälle
@@ -137,6 +140,18 @@ Die VM wird nun erstellt.
 ## K4
 ### Sicherheitsaspekte implementieren
 #### Firewall inkl. Rules
+
+Ich habe nun die Firewall installiert. Vor dem aktivieren habe ich aber die Rules erstellt.
+
+Die folgenden Rules habe ich erstellt:
+| IP       | Port | Beschreibung     | Direction | Ziel |
+|----------|------|------------------|-----------|------|
+| 10.0.0.2 | 22   | SSH Zugang       | ->        | any  |
+| 10.0.0.2 | 3306 | MySQL Zugang Web | ->        | any  |
+|          |      |                  |           |      |
+|          |      |                  |           |      |
+
+
 #### Reverse-Proxy
 #### Benutzer- und Rechtevergabe
 #### Zugang SSH-Tunnel
