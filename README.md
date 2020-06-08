@@ -141,11 +141,12 @@ Die VM wird nun erstellt.
 ### Sicherheitsaspekte implementieren
 #### Firewall inkl. Rules
 
-1. Ich habe zuerst die Firewall installiert: `sudo apt-get install ufw`  
+1. Ich habe zuerst die Firewall installiert:  
+   `sudo apt-get install ufw`  
 
 Vor dem aktivieren habe ich aber die Rules erstellt.
 
-2. Rules habe ich so erstellt:  
+1. Rules habe ich so erstellt:  
 `sudo ufw allow from [Source IP] to [Destination IP oder any] port [Port-Nummer]`
 
 Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt habe ich SSH und MySQL aktiviert.
@@ -162,6 +163,19 @@ Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt
 
 #### Reverse-Proxy
 
+1. Den Reverse-Proxy habe ich mit dem folgenden Befehl installiert:  
+   `sudo apt-get install libxml2-dev`
+
+2. Nun habe ich drei Module aktiviert:  
+   `sudo a2enmod proxy`
+   `sudo a2enmod proxy_html`
+   `sudo a2enmod proxy_http`
+
+3. Die Konf-Datei von Apache2 /etc/apache2/apache2.conf musste ich mit folgendem ergänzen:
+   `ServerName localhost`
+
+4. Danach habe ich den Apache2 Dienst neugestartet.
+   `sudo service apache2 restart`
 
 #### Benutzer- und Rechtevergabe
 #### Zugang SSH-Tunnel
