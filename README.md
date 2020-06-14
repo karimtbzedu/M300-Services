@@ -245,9 +245,9 @@ Ich zeige nun den Absoluten Modus, da dieser viel einfacher ist.
 
 Beispiel: `chmod 764 apache2.conf`
 
-Benutzer (Besitzer): R+W+E (Lesen,Schreiben,Ausführen)
-Gruppe: R+W (Lesen und ausführen)
-Alle: R (Lesen)
+Benutzer (Besitzer): R+W+E (Lesen,Schreiben,Ausführen)  
+Gruppe: R+W (Lesen und ausführen)  
+Alle: R (Lesen)  
 
 | Nummer  |	Berechtigungs-Typ |	Symbol |
 | ------- |-------------------|--------|
