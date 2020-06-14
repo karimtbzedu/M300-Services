@@ -189,7 +189,16 @@ In Linux gibt es unterschiedliche Bentuzer, Gruppen und Rechte im Filesystem. Da
 Beim Anmelden wird sich mit Benutzername und Kennwort angemeldet. Alle Aktionen (bspw. ein Programm starten) die man ausführt werden mit den Rechten gemacht die dem Benutzer zugeordnet wurden.
 
 Der Benutzer root ist im System allmächtig und kann jedes Recht brechen. Zu bestimmten Administrativen Funktionen ist nur der root-Benutzer berechtigt. Generell kennt Linux nur 2 Arten von Benutzern: root und normale Benutzer, zusätzliche Zwischenabstufungen gibt es nicht, es ist jedoch möglich normalen Benutzern erweiterte Befugnisse zu geben (mit dem Programm sudo).
+Für einige Prozesse und Dienste gibt es zusätzliche Benutzer.
 
+| Benutzername     | Funktion |
+|------------------|-------------|
+| root  | Der Systemverwalter unter Linux   |
+| nobody  | Wird von Prozessen als Benutzererkennung verwendet, wenn nur ein Minimum an Rechten vergeben werden soll |
+| cupsys  | Benutzer des Druckdienstes CUPS   |
+| www-data  | Benutzer des Webservers Apache    |
+	
+	
 
 
 #### Zugang SSH-Tunnel
