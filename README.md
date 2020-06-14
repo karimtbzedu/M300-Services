@@ -184,6 +184,8 @@ Sollte ich jetzt eine Konfig machen wollen, kann ich das z.B in /etc/apache2/sit
 ![Reverse-Proxy](https://i.ibb.co/xSFq5xD/Bild1.png "Logo Title Text 1"
 
 #### Benutzer- und Rechtevergabe
+
+#### Benutzer
 In Linux gibt es unterschiedliche Bentuzer, Gruppen und Rechte im Filesystem. Dateien werden einem Benutzer und einer Gruppe zugeordnet. Während man in mehreren Gruppen sein kann, gibt es immer eine primäre Gruppe in dem ein Benutzer sein kann.  
   
 Beim Anmelden wird sich mit Benutzername und Kennwort angemeldet. Alle Aktionen (bspw. ein Programm starten) die man ausführt werden mit den Rechten gemacht die dem Benutzer zugeordnet wurden.
@@ -198,8 +200,88 @@ Für einige Prozesse und Dienste gibt es zusätzliche Benutzer.
 | cupsys  | Benutzer des Druckdienstes CUPS   |
 | www-data  | Benutzer des Webservers Apache    |
 	
-	
+#### Gruppen
+Gruppen lassen sich ähnlich wie Benutzer anlegen, ändern oder löschen.  
+1. Gruppe anlegen: `groupadd`
+2. Gruppe ändern: `groupmod`
+3. Gruppe löschen: `groupdel`
 
+Beispiele:  
+`groupadd webadmin`  
+Dies legt die Gruppe webadmin an.
+  
+`groupdel webadmin`  
+Dies löscht die Gruppe wieder.  
+
+`group beispieluser1`
+So kann man herausfinden, in welchen Gruppen ein Bentuzer Mitglied ist.  
+
+Nun gibt es primäre und sekundäre Gruppen. Wie bei Kapitel Benutzer bereits erklärt, kann ein Benutzer nur in einer Gruppe primäres Mitglied sein. Er kann dafür in beliebig vielen sekundären Gruppen sein.
+  
+Wenn eine neue Datei angelegt wird, müssen diese nicht nur einem Benutzer, sondern auch einer Gruppe zugeordnet werden. Hierzu wird die primäre Gruppe benutzt. Neu angelegte Dateien gehören also immer zur primären Gruppe des Benutzers der diese Datei angelegt hat. 
+
+#### Dateisystem
+Jede Datei und jedes Verzeichnis in einem Linux-System hat 3 Berechtigungen, die für alle 3 Eigentümer definiert sind.
+  
+<b>Lesen (r):</b> Diese Berechtigung gibt die Berechtigung, eine Datei zu öffnen und zu lesen. Leseberechtigung auf ein Verzeichnis gibt die Möglichkeit, dessen Inhalt aufzulisten.
+  
+<b>Schreiben (w):</b> Die Schreibberechtigung gibt die Berechtigung, den Inhalt einer Datei zu ändern. Die Schreibberechtigung für ein Verzeichnis gibt die Berechtigung, in dem Verzeichnis gespeicherte Dateien hinzuzufügen, zu entfernen und umzubenennen. 
+      
+<b>Ausführen (x):</b> Unter Unix/Linux kann man ein Programm nur ausführen, wenn die Ausführungserlaubnis gesetzt ist. Wenn die Ausführungsberechtigung nicht gesetzt ist, kann man den Programmcode möglicherweise trotzdem sehen/ändern (vorausgesetzt, man hat Lese- und Schreibberechtigung), aber nicht ausführen.
+
+Mit dem Befehl `ls -l` kann man die Berechtigung für eine Datei oder ein Verzeichnis ansehen.
+
+Output: `-rw-r--r--`
+
+Der Output ist so aufgebaut, dass zuerst die Berechtigung für den Benutzer, danach für die Gruppe und dann für andere Benutzer angezeigt wird.
+
+Nummer  	Berechtigungs-Typ 	Symbol
+0 	      No Permission 	      ---
+1  	      Execute 	          --x
+2 	      Write 	            -w-
+3 	      Execute + Write 	  -wx
+4 	      Read 	               r--
+5 	      Read + Execute 	     r-x
+6 	      Read +Write 	        rw
+7 	      Read + Write +Execute rwx
+
+<b>Hauptverzeichnise</b>
+  
+`/bin` ein Ort für die am häufigsten verwendeten Terminal-Befehle, wie ls, mount, rm, etc.
+  
+`/boot` enthält Dateien, die zum Starten des Systems benötigt werden, (bspw. der Linux-Kernel)
+  
+`/dev` enthält alle Gerätedateien, bei denen es sich nicht um reguläre Dateien handelt, sondern die stattdessen auf verschiedene Hardware-Geräte verweisen
+
+`/etc` enthält systemweite Konfigurationsdateien, die das Systemverhalten für alle Benutzer beeinflussen.
+
+`/home` das persönliche Verzeichnis für den Benutzer.
+
+`/lib` enthält sehr wichtige dynamische Bibliotheken und Kernel-Module
+
+`/media` ist als Einhängepunkt für externe Geräte wie Festplatten oder Wechselmedien (Disketten, CDs, DVDs) gedacht.
+
+`/mnt` ist ebenfalls ein Ort für Mount-Punkte, aber speziell für "temporär gemountete" Geräte, wie z.B. Netzwerk-Dateisysteme.
+
+`/opt` kann verwendet werden, um zusätzliche Software für Ihr System zu speichern, die nicht vom Paketmanager verwaltet wird.
+
+`/proc` ist ein virtuelles Dateisystem, das einen Mechanismus für den Kernel bietet, um Informationen an Prozesse zu senden.
+
+`/root` ist das Home-Verzeichnis des Superusers
+
+`/run` ist ein temporäres Dateisystem, das früh im Boot-Prozess verfügbar ist und in dem flüchtige Laufzeitdaten gespeichert werden. Dateien unter diesem Verzeichnis werden zu Beginn des Boot-Prozesses entfernt.
+
+`/sbin` enthält wichtige administrative Befehle, die im Allgemeinen nur vom Superuser verwendet werden sollten.
+
+`/srv` kann Datenverzeichnisse von Diensten wie HTTP (/srv/www/) oder FTP enthalten.
+
+`/sys` ist ein virtuelles Dateisystem, auf das zugegriffen werden kann, um Informationen über die Sicht des Kernels auf das System einzustellen oder zu erhalten.
+
+`/tmp` ist ein Ort für temporäre Dateien, die von Anwendungen verwendet werden.
+
+`/usr` enthält die Mehrzahl der Benutzer-Dienstprogramme und Anwendungen und repliziert teilweise die Wurzelverzeichnisstruktur, z.B. mit unter anderem /usr/bin/ und /usr/lib.
+
+`/var` ist variablen Daten gewidmet, wie z.B. Protokollen, Datenbanken, Websites und temporären Spool-Dateien (E-Mail usw.), die von einem Bootvorgang zum nächsten bestehen bleiben. Ein bemerkenswertes Verzeichnis, das es enthält, ist /var/log, in dem Systemprotokolldateien aufbewahrt werden. 
 
 #### Zugang SSH-Tunnel
 
@@ -214,7 +296,7 @@ Für einige Prozesse und Dienste gibt es zusätzliche Benutzer.
 ### Quellenverzeichnis
 
 1. [wiki.ubuntuusers.de - Apache 2.4](https://wiki.ubuntuusers.de/Apache_2.4/)  
-2. [checkdomain.de](https://www.checkdomain.de/hosting/lexikon/apache/)
+2. [checkdomain.de - Apache](https://www.checkdomain.de/hosting/lexikon/apache/)
 3. [wiki.ubuntuusers.de - Webalizer](https://wiki.ubuntuusers.de/Webalizer/)
-4. [maruweb.de](http://dozent.maruweb.de/material/benutzer.shtml)
+4. [maruweb.de- Linux](http://dozent.maruweb.de/material/benutzer.shtml)
 5. 
