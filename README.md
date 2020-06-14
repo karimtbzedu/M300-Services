@@ -185,7 +185,7 @@ Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt
    `sudo service apache2 restart`
 
 Sollte ich jetzt eine Konfig machen wollen, kann ich das z.B in /etc/apache2/sites-enabled/001-reverseproxy.conf machen.
-![Reverse-Proxy](https://i.ibb.co/xSFq5xD/Bild1.png "Logo Title Text 1"
+![Reverse-Proxy](https://i.ibb.co/xSFq5xD/Bild1.png "Logo Title Text 1")
 
 ### Benutzer- und Rechtevergabe
 
