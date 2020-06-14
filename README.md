@@ -235,15 +235,16 @@ Output: `-rw-r--r--`
 
 Der Output ist so aufgebaut, dass zuerst die Berechtigung für den Benutzer, danach für die Gruppe und dann für andere Benutzer angezeigt wird.
 
-Nummer  	Berechtigungs-Typ 	Symbol
-0 	      No Permission 	      ---
-1  	      Execute 	          --x
-2 	      Write 	            -w-
-3 	      Execute + Write 	  -wx
-4 	      Read 	               r--
-5 	      Read + Execute 	     r-x
-6 	      Read +Write 	        rw
-7 	      Read + Write +Execute rwx
+| Nummer  |	Berechtigungs-Typ |	Symbol |
+| ------- |-------------------|--------|
+| 0 	    | No Permission 	  |   ---
+| 1  	    | Execute 	        |  --x
+| 2 	    | Write 	          |  -w-
+| 3 	    | Execute + Write 	|  -wx
+| 4 	    | Read 	            |  r--
+| 5 	    |  Read + Execute 	|     r-x
+| 6 	    | Read +Write 	    |    rw
+| 7 	    | Read + Write +Execute | rwx
 
 <b>Hauptverzeichnise</b>
   
