@@ -140,9 +140,8 @@ Die VM wird nun erstellt.
 ### Testfälle
 
 ## K4
-### Sicherheitsaspekte implementieren
 Ich habe eine Firewall mit Rules erstellt und einen Reverse-Proxy eingerichtet. Zudem habe ich die Benutzer- und Rechtevergabe, SSH-Tunnel und Sicherheitsmassnahmen dokumentiert.
-#### Firewall inkl. Rules
+### Firewall inkl. Rules
 
 1. Ich habe zuerst die Firewall installiert:  
    `sudo apt-get install ufw`  
@@ -164,7 +163,7 @@ Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt
 3. Die Firewall musste ich nach dem erstellen noch aktivieren:  
 `sudo ufw enable`
 
-#### Reverse-Proxy
+### Reverse-Proxy
 
 1. Den Reverse-Proxy habe ich mit dem folgenden Befehl installiert:  
    `sudo apt-get install libxml2-dev`
@@ -183,7 +182,7 @@ Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt
 Sollte ich jetzt eine Konfig machen wollen, kann ich das z.B in /etc/apache2/sites-enabled/001-reverseproxy.conf machen.
 ![Reverse-Proxy](https://i.ibb.co/xSFq5xD/Bild1.png "Logo Title Text 1"
 
-#### Benutzer- und Rechtevergabe
+### Benutzer- und Rechtevergabe
 
 #### Benutzer
 In Linux gibt es unterschiedliche Bentuzer, Gruppen und Rechte im Filesystem. Dateien werden einem Benutzer und einer Gruppe zugeordnet. Während man in mehreren Gruppen sein kann, gibt es immer eine primäre Gruppe in dem ein Benutzer sein kann.  
@@ -298,10 +297,10 @@ Alle: R (Lesen)
 
 `/var` ist variablen Daten gewidmet, wie z.B. Protokollen, Datenbanken, Websites und temporären Spool-Dateien (E-Mail usw.), die von einem Bootvorgang zum nächsten bestehen bleiben. Ein bemerkenswertes Verzeichnis, das es enthält, ist /var/log, in dem Systemprotokolldateien aufbewahrt werden. 
 
-#### Zugang SSH-Tunnel
+### Zugang SSH-Tunnel
 
 
-#### Sicherheitsmassnahmen
+### Sicherheitsmassnahmen
 
 
 ## K5
