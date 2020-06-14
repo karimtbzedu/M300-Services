@@ -134,6 +134,7 @@ Die VM wird nun erstellt.
 
 
 ### Netzwerkplan
+
 ### Sicherheitsaspekte
 ### Testfälle
 
@@ -177,8 +178,15 @@ Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt
 4. Danach habe ich den Apache2 Dienst neugestartet.
    `sudo service apache2 restart`
 
+Sollte ich jetzt eine Konfig machen wollen, kann ich das z.B in sites-enabled/001-reverseproxy.conf
+<img src="C:\Users\Karim\Desktop\Schule\Informatik\Modul_300\Bild1.png" alt="Bild von reverseproxy.conf" title="reverseproxy.conf" />
+
 #### Benutzer- und Rechtevergabe
+
+
 #### Zugang SSH-Tunnel
+
+
 #### Sicherheitsmassnahmen
 
 
