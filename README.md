@@ -130,7 +130,11 @@ Mittels den Möglichkeiten in K4 möchte ich dann ein Hardening für den Webserv
 Die VM wird nun erstellt.
 
 ### Netzwerkplan
-![alt text](https://i.ibb.co/KVhZRw6/vagrant-netzwerkdesign.png "Logo Title Text 1")
+#### Netzwerkplan Funktion Vagrant
+![Netzwerkplan-1](https://i.ibb.co/KVhZRw6/vagrant-netzwerkdesign.png "")
+
+#### Netzwerkplan meine Umgebung
+![Netzwerkplan-2](https://i.ibb.co/y6nT1WC/networkplan-det.png "Logo Title Text 1")
 
 ### Sicherheitsaspekte
 ### Testfälle
