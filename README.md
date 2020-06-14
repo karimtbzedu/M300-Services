@@ -141,6 +141,7 @@ Die VM wird nun erstellt.
 
 ## K4
 ### Sicherheitsaspekte implementieren
+Ich habe eine Firewall mit Rules erstellt und einen Reverse-Proxy eingerichtet. Zudem habe ich die Benutzer- und Rechtevergabe, SSH-Tunnel und Sicherheitsmassnahmen dokumentiert.
 #### Firewall inkl. Rules
 
 1. Ich habe zuerst die Firewall installiert:  
@@ -179,10 +180,16 @@ Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt
 4. Danach habe ich den Apache2 Dienst neugestartet.
    `sudo service apache2 restart`
 
-Sollte ich jetzt eine Konfig machen wollen, kann ich das z.B in sites-enabled/001-reverseproxy.conf
-![Reverse-Proxy](https://i.ibb.co/xSFq5xD/Bild1.png "Logo Title Text 1")
+Sollte ich jetzt eine Konfig machen wollen, kann ich das z.B in /etc/apache2/sites-enabled/001-reverseproxy.conf machen.
+![Reverse-Proxy](https://i.ibb.co/xSFq5xD/Bild1.png "Logo Title Text 1"
 
 #### Benutzer- und Rechtevergabe
+In Linux gibt es unterschiedliche Bentuzer, Gruppen und Rechte im Filesystem. Dateien werden einem Benutzer und einer Gruppe zugeordnet. Während man in mehreren Gruppen sein kann, gibt es immer eine primäre Gruppe in dem ein Benutzer sein kann.  
+  
+Beim Anmelden wird sich mit Benutzername und Kennwort angemeldet. Alle Aktionen (bspw. ein Programm starten) die man ausführt werden mit den Rechten gemacht die dem Benutzer zugeordnet wurden.
+
+Der Benutzer root ist im System allmächtig und kann jedes Recht brechen. Zu bestimmten Administrativen Funktionen ist nur der root-Benutzer berechtigt. Generell kennt Linux nur 2 Arten von Benutzern: root und normale Benutzer, zusätzliche Zwischenabstufungen gibt es nicht, es ist jedoch möglich normalen Benutzern erweiterte Befugnisse zu geben (mit dem Programm sudo).
+
 
 
 #### Zugang SSH-Tunnel
@@ -195,3 +202,10 @@ Sollte ich jetzt eine Konfig machen wollen, kann ich das z.B in sites-enabled/00
 ### Persönliche Lernentwicklung
 #### Vorwissen - Wissenszuwachs
 #### Reflexion
+### Quellenverzeichnis
+
+1. [wiki.ubuntuusers.de - Apache 2.4](https://wiki.ubuntuusers.de/Apache_2.4/)  
+2. [checkdomain.de](https://www.checkdomain.de/hosting/lexikon/apache/)
+3. [wiki.ubuntuusers.de - Webalizer](https://wiki.ubuntuusers.de/Webalizer/)
+4. [maruweb.de](http://dozent.maruweb.de/material/benutzer.shtml)
+5. 
