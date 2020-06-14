@@ -138,6 +138,11 @@ Die VM wird nun erstellt.
 
 ### Sicherheitsaspekte
 ### Testfälle
+| ID | Beschreibung                                   | Testschritte                                                                                                      | Erwartetes Ergebnis                 | Effektives Ergebnis           |
+|----|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------|
+| 1  | Apache2 Default Website von lokal aufrufen     | 127.0.0.1:8080 im Browser eingeben                                                                                | Default Seite geht auf              | Default Seite geht auf        |
+| 2  | Apache 2 Default Website anpassen              | 1. Das File index.html in /var/www/html öffnen 2. Das File bearbeiten und speichern 3. Service apache2 neustarten | Default Site ist bearbeitet         | Default Site ist bearbeitet   |
+| 3  | Überprufen ob Benutzer www-data erstellt wurde | getent passwd                                                                                                     | www-data ist in der Liste vorhanden | getent group \| grep username |
 
 ## K4
 Ich habe eine Firewall mit Rules erstellt und einen Reverse-Proxy eingerichtet. Zudem habe ich die Benutzer- und Rechtevergabe, SSH-Tunnel und Sicherheitsmassnahmen dokumentiert.
@@ -259,8 +264,9 @@ Alle: R (Lesen)
 | 6 	    | Read +Write 	    |    rw
 | 7 	    | Read + Write +Execute | rwx
 
+
 <b>Hauptverzeichnise</b>
-  
+
 `/bin` ein Ort für die am häufigsten verwendeten Terminal-Befehle, wie ls, mount, rm, etc.
   
 `/boot` enthält Dateien, die zum Starten des Systems benötigt werden, (bspw. der Linux-Kernel)
