@@ -235,14 +235,28 @@ Output: `-rw-r--r--`
 
 Der Output ist so aufgebaut, dass zuerst die Berechtigung für den Benutzer, danach für die Gruppe und dann für andere Benutzer angezeigt wird.
 
+Um eine Berechtigung zu setzen, kann man den Befehl `chmod berechtigung dateiname` benutzen.
+
+Es gibt zwei Möglichkeiten, wie man den Befehl benutzen kann:  
+1. Absolute Mode
+2. Symbolic Mode
+
+Ich zeige nun den Absoluten Modus, da dieser viel einfacher ist. 
+
+Beispiel: `chmod 764 apache2.conf`
+
+Benutzer (Besitzer): R+W+E (Lesen,Schreiben,Ausführen)
+Gruppe: R+W (Lesen und ausführen)
+Alle: R (Lesen)
+
 | Nummer  |	Berechtigungs-Typ |	Symbol |
 | ------- |-------------------|--------|
-| 0 	    | No Permission 	  |   ---
+| 0 	    | Keine Berechtigung 	  |   ---
 | 1  	    | Execute 	        |  --x
 | 2 	    | Write 	          |  -w-
 | 3 	    | Execute + Write 	|  -wx
 | 4 	    | Read 	            |  r--
-| 5 	    |  Read + Execute 	|     r-x
+| 5 	    |  Read + Execute 	|     r-x 
 | 6 	    | Read +Write 	    |    rw
 | 7 	    | Read + Write +Execute | rwx
 
