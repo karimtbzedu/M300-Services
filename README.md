@@ -310,9 +310,22 @@ Alle: R (Lesen)
 
 
 ## K5
-### Persönliche Lernentwicklung
+### Persönliche Lernentwicklung & Reflexion
+In dieser LB habe ich sehr viel gelernt. Ich kannte Vagrant zuvor tatsächlich noch nicht und werde es bestimmt noch im Geschäft oder privat benutzen.
+  
+Als es zuerst hiess, dass wir mit Markdown arbeiten hat sich bei mir ein grosses Fragezeichen gebildet. Ich habe zuvor noch nie von diesem Begriff gehört und obwohl ich Informatiker bin, habe ich einige Stunden gebraucht, um mit Visual Studio mit der Markdown Extension klar komme. Als ich es dann aber begriffen habe, hat es mir sehr gefallen. Auch wenn das Design nicht so "schön" ist, wie bspw. in einem Word Dokument - es ist sehr gut benutzbar und hilfreich, um solche Dokumentationen zu erstellen.
+  
 #### Vorwissen - Wissenszuwachs
-#### Reflexion
+Zuvor kannte ich Vagrant noch nicht. Auch andere Methoden, um so leicht VMs zu erstellen waren mir nicht bekannt.
+Im Büro arbeiten wir aktuell mit XenCenter gearbeitet und bald mit Nutanix. Zwar konnte ich Nutanix noch nicht kennenlernen, aber das werde ich bestimmt in den Sommerferien anschauen können. 
+  
+Gelernt habe ich:
+1. Wie ich Vagrant bediene
+2. Wie ich ein Vagrantfile ganz leicht erstelle
+3. Wozu Vagrant benutzt wird
+4. Firewall Regeln erstellen & mit Reverse-Proxy umgehen (habe ich zuvor noch nie gemacht auf Linux!)
+5. Eine Dokumentation mit Markdown schreiben
+
 ### Quellenverzeichnis
 
 1. [wiki.ubuntuusers.de - Apache 2.4](https://wiki.ubuntuusers.de/Apache_2.4/)  
