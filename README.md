@@ -140,7 +140,7 @@ Die VM wird nun erstellt.
 | ID | Beschreibung                                   | Testschritte                                                                                                      | Erwartetes Ergebnis                 | Effektives Ergebnis           |
 |----|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------|
 | 1  | Apache2 Default Website von lokal aufrufen     | 127.0.0.1:8080 im Browser eingeben                                                                                | Default Seite geht auf              | Default Seite geht auf        |
-| 2  | Apache 2 Default Website anpassen              | 1. Das File index.html in /var/www/html öffnen 2. Das File bearbeiten und speichern 3. Service apache2 neustarten | Default Site ist bearbeitet         | Default Site ist bearbeitet   |
+| 2  | Apache 2 Default Website anpassen              | 1. Das File index.html in /var/www/html öffnen 2. Das File bearbeiten und speichern 3. Service apache2 neustarten 4. 127.0.0.1:8080 eingeben und Änderung überprüfen | Default Site ist bearbeitet         | Default Site ist bearbeitet   |
 | 3  | Überprufen ob Benutzer www-data erstellt wurde | getent passwd                                                                                                     | www-data ist in der Liste vorhanden | getent group \| grep username |
 | 4 | Firewall Status überprüfen | sudo ufw status | Status: active | Status: active |
 
