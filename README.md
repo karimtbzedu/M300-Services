@@ -136,13 +136,13 @@ Die VM wird nun erstellt.
 #### Netzwerkplan meiner Umgebung
 ![Netzwerkplan-2](https://i.ibb.co/59HwxgM/networkdesign.png)
 
-### Sicherheitsaspekte
 ### Testfälle
 | ID | Beschreibung                                   | Testschritte                                                                                                      | Erwartetes Ergebnis                 | Effektives Ergebnis           |
 |----|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------|
 | 1  | Apache2 Default Website von lokal aufrufen     | 127.0.0.1:8080 im Browser eingeben                                                                                | Default Seite geht auf              | Default Seite geht auf        |
 | 2  | Apache 2 Default Website anpassen              | 1. Das File index.html in /var/www/html öffnen 2. Das File bearbeiten und speichern 3. Service apache2 neustarten | Default Site ist bearbeitet         | Default Site ist bearbeitet   |
 | 3  | Überprufen ob Benutzer www-data erstellt wurde | getent passwd                                                                                                     | www-data ist in der Liste vorhanden | getent group \| grep username |
+| 4 | Firewall Status überprüfen | sudo ufw status | Status: active | Status: active |
 
 ## K4
 Ich habe eine Firewall mit Rules erstellt und einen Reverse-Proxy eingerichtet. Zudem habe ich die Benutzer- und Rechtevergabe, SSH-Tunnel und Sicherheitsmassnahmen dokumentiert.
@@ -260,7 +260,7 @@ Alle: R (Lesen)
 | 2 	    | Write 	          |  -w-
 | 3 	    | Execute + Write 	|  -wx
 | 4 	    | Read 	            |  r--
-| 5 	    |  Read + Execute 	|     r-x 
+| 5 	    | Read + Execute 	|     r-x 
 | 6 	    | Read +Write 	    |    rw
 | 7 	    | Read + Write +Execute | rwx
 
