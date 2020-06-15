@@ -313,7 +313,7 @@ Alle: R (Lesen)
 ### Persönliche Lernentwicklung & Reflexion
 In dieser LB habe ich sehr viel gelernt. Ich kannte Vagrant zuvor tatsächlich noch nicht und werde es bestimmt noch im Geschäft oder privat benutzen.
   
-Als es zuerst hiess, dass wir mit Markdown arbeiten hat sich bei mir ein grosses Fragezeichen gebildet. Ich habe zuvor noch nie von diesem Begriff gehört und obwohl ich Informatiker bin, habe ich einige Stunden gebraucht, um mit Visual Studio mit der Markdown Extension klar komme. Als ich es dann aber begriffen habe, hat es mir sehr gefallen. Auch wenn das Design nicht so "schön" ist, wie bspw. in einem Word Dokument - es ist sehr gut benutzbar und hilfreich, um solche Dokumentationen zu erstellen.
+Als es zuerst hiess, dass wir mit Markdown arbeiten hat sich bei mir ein grosses Fragezeichen aufgetan. Ich habe zuvor noch nie von diesem Begriff gehört und obwohl ich Informatiker bin, habe ich einige Stunden gebraucht, um mit Visual Studio Code zurecht zu kommen. Trotz den Anfangsschwierigkeiten - nachdem ich einige Tagen damit gearbeitet habe, hat es mir sehr gefallen. Auch wenn es nicht so benutzerfreundlich ist wie bspw. ein Word Dokument; es ist sehr gut benutzbar und hilfreich, um Dokumentationen in dieser Art und Weise zu erstellen.
   
 #### Vorwissen - Wissenszuwachs
 Zuvor kannte ich Vagrant noch nicht. Auch andere Methoden, um so leicht VMs zu erstellen waren mir nicht bekannt.
