@@ -131,10 +131,10 @@ Die VM wird nun erstellt.
 
 ### Netzwerkplan
 #### Netzwerkplan Funktion Vagrant
-![Netzwerkplan-1](https://i.ibb.co/KVhZRw6/vagrant-netzwerkdesign.png "")
+![Netzwerkplan-1](https://i.ibb.co/KVhZRw6/vagrant-netzwerkdesign.png)
 
-#### Netzwerkplan meine Umgebung
-![Netzwerkplan-2](https://i.ibb.co/y6nT1WC/networkplan-det.png "Logo Title Text 1")
+#### Netzwerkplan meiner Umgebung
+![Netzwerkplan-2](https://i.ibb.co/59HwxgM/networkdesign.png)
 
 ### Sicherheitsaspekte
 ### Testfälle
@@ -227,11 +227,11 @@ Wenn eine neue Datei angelegt wird, müssen diese nicht nur einem Benutzer, sond
 #### Dateisystem
 Jede Datei und jedes Verzeichnis in einem Linux-System hat 3 Berechtigungen, die für alle 3 Eigentümer definiert sind.
   
-<b>Lesen (r):</b> Diese Berechtigung gibt die Berechtigung, eine Datei zu öffnen und zu lesen. Leseberechtigung auf ein Verzeichnis gibt die Möglichkeit, dessen Inhalt aufzulisten.
+<b>Lesen/Read (r):</b> Diese Berechtigung gibt die Berechtigung, eine Datei zu öffnen und zu lesen. Leseberechtigung auf ein Verzeichnis gibt die Möglichkeit, dessen Inhalt aufzulisten.
   
-<b>Schreiben (w):</b> Die Schreibberechtigung gibt die Berechtigung, den Inhalt einer Datei zu ändern. Die Schreibberechtigung für ein Verzeichnis gibt die Berechtigung, in dem Verzeichnis gespeicherte Dateien hinzuzufügen, zu entfernen und umzubenennen. 
+<b>Schreiben/Write (w):</b> Die Schreibberechtigung gibt die Berechtigung, den Inhalt einer Datei zu ändern. Die Schreibberechtigung für ein Verzeichnis gibt die Berechtigung, in dem Verzeichnis gespeicherte Dateien hinzuzufügen, zu entfernen und umzubenennen. 
       
-<b>Ausführen (x):</b> Unter Unix/Linux kann man ein Programm nur ausführen, wenn die Ausführungserlaubnis gesetzt ist. Wenn die Ausführungsberechtigung nicht gesetzt ist, kann man den Programmcode möglicherweise trotzdem sehen/ändern (vorausgesetzt, man hat Lese- und Schreibberechtigung), aber nicht ausführen.
+<b>Ausführen/Execute (x):</b> Unter Unix/Linux kann man ein Programm nur ausführen, wenn die Ausführungserlaubnis gesetzt ist. Wenn die Ausführungsberechtigung nicht gesetzt ist, kann man den Programmcode möglicherweise trotzdem sehen/ändern (vorausgesetzt, man hat Lese- und Schreibberechtigung), aber nicht ausführen.
 
 Mit dem Befehl `ls -l` kann man die Berechtigung für eine Datei oder ein Verzeichnis ansehen.
 
@@ -251,7 +251,7 @@ Beispiel: `chmod 764 apache2.conf`
 
 Benutzer (Besitzer): R+W+E (Lesen,Schreiben,Ausführen)  
 Gruppe: R+W (Lesen und ausführen)  
-Alle: R (Lesen)  
+Alle: R (Lesen)
 
 | Nummer  |	Berechtigungs-Typ |	Symbol |
 | ------- |-------------------|--------|
@@ -303,19 +303,13 @@ Alle: R (Lesen)
 
 `/var` ist variablen Daten gewidmet, wie z.B. Protokollen, Datenbanken, Websites und temporären Spool-Dateien (E-Mail usw.), die von einem Bootvorgang zum nächsten bestehen bleiben. Ein bemerkenswertes Verzeichnis, das es enthält, ist /var/log, in dem Systemprotokolldateien aufbewahrt werden. 
 
-### Zugang SSH-Tunnel
-
-
-### Sicherheitsmassnahmen
-
-
 ## K5
 ### Persönliche Lernentwicklung & Reflexion
 In dieser LB habe ich sehr viel gelernt. Ich kannte Vagrant zuvor tatsächlich noch nicht und werde es bestimmt noch im Geschäft oder privat benutzen.
   
 Als es zuerst hiess, dass wir mit Markdown arbeiten hat sich bei mir ein grosses Fragezeichen aufgetan. Ich habe zuvor noch nie von diesem Begriff gehört und obwohl ich Informatiker bin, habe ich einige Stunden gebraucht, um mit Visual Studio Code zurecht zu kommen. Trotz den Anfangsschwierigkeiten - nachdem ich einige Tagen damit gearbeitet habe, hat es mir sehr gefallen. Auch wenn es nicht so benutzerfreundlich ist wie bspw. ein Word Dokument; es ist sehr gut benutzbar und hilfreich, um Dokumentationen in dieser Art und Weise zu erstellen.
   
-#### Vorwissen - Wissenszuwachs
+### Vorwissen - Wissenszuwachs
 Zuvor kannte ich Vagrant noch nicht. Auch andere Methoden, um so leicht VMs zu erstellen waren mir nicht bekannt.
 Im Büro arbeiten wir aktuell mit XenCenter gearbeitet und bald mit Nutanix. Zwar konnte ich Nutanix noch nicht kennenlernen, aber das werde ich bestimmt in den Sommerferien anschauen können. 
   
@@ -332,4 +326,3 @@ Gelernt habe ich:
 2. [checkdomain.de - Apache](https://www.checkdomain.de/hosting/lexikon/apache/)
 3. [wiki.ubuntuusers.de - Webalizer](https://wiki.ubuntuusers.de/Webalizer/)
 4. [maruweb.de- Linux](http://dozent.maruweb.de/material/benutzer.shtml)
-5. 
