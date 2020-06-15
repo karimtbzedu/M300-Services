@@ -162,10 +162,8 @@ Hier die Firewall-Rule Tabelle, die laufend aktualisiert wird. Im ersten Schritt
 | 10.0.0.2 | 22   | TCP/UDP   | SSH Zugang       | <->       | any  |
 | 10.0.0.2 | 3306 | TCP/UDP   | MySQL Zugang Web | ->        | any  |
 | 10.0.0.2 | 80   | TCP       | HTTP             | ->        | any  |
-|          |      |           |                  |           |      |
-|          |      |           |                  |           |      |
 
-3. Die Firewall musste ich nach dem erstellen noch aktivieren:  
+1. Die Firewall musste ich nach dem erstellen noch aktivieren:  
 `sudo ufw enable`
 
 ### Reverse-Proxy
